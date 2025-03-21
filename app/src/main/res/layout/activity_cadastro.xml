@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nome -->
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome" />
+
+        <!-- Idade -->
+        <EditText
+            android:id="@+id/editTextIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Idade"
+            android:inputType="number" />
+
+        <!-- UF -->
+        <EditText
+            android:id="@+id/editTextUF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UF" />
+
+        <!-- Cidade -->
+        <EditText
+            android:id="@+id/editTextCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade" />
+
+        <!-- Telefone -->
+        <EditText
+            android:id="@+id/editTextTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Tamanho de Roupas (RadioButtons) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamanho de Roupas"
+            android:layout_marginTop="16dp" />
+
+        <!-- Cores Preferidas (CheckBoxes) -->
+        <RadioGroup
+            android:id="@+id/radioGroupTamanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P" />
+
+            <RadioButton
+                android:id="@+id/radioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G" />
+
+            <RadioButton
+                android:id="@+id/radioButtonGG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GG" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cores Preferidas"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxPreto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preto" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBranco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branco" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVermelho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vermelho" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azul" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verde" />
+        </LinearLayout>
+
+        <!-- Botão de Cadastro -->
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

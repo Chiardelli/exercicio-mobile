@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Campo para o primeiro número -->
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o primeiro número"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para o segundo número -->
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o segundo número"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Linha de botões para operações -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginBottom="24dp">
+        <!-- Botão de Adição -->
+        <Button
+            android:id="@+id/btnSomar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"/>
+
+        <!-- Botão de Subtração -->
+        <Button
+            android:id="@+id/btnSubtrair"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"/>
+
+        <!-- Botão de Multiplicação -->
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="×"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"/>
+        <!-- Botão de Divisão -->
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="÷"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="130dp"
+        android:onClick="voltarMain"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Voltar"
+        android:textSize="18sp" />
+</LinearLayout>

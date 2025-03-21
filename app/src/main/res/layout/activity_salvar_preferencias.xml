@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha suas preferências:"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"/>
+
+    <CheckBox
+        android:id="@+id/checkNotificacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receber notificações" />
+
+    <CheckBox
+        android:id="@+id/checkModoEscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modo escuro" />
+
+    <CheckBox
+        android:id="@+id/checkLembrarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lembrar login" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:text="Salvar Preferências"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="voltarMain"
+        android:layout_marginLeft="130dp"
+        android:text="Voltar" />
+
+</LinearLayout>
